@@ -1,4 +1,4 @@
-QT       += core gui network
+QT       += core gui network serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,11 +18,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     dialogabout.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    receiver/serialcentralprocess.cpp \
+    receiver/serialreceiver.cpp
 
 HEADERS += \
     dialogabout.h \
-    mainwindow.h
+    mainwindow.h \
+    receiver/serialcentralprocess.h \
+    receiver/serialreceiver.h
 
 FORMS += \
     dialogabout.ui \
