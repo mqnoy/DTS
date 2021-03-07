@@ -46,4 +46,9 @@ void SerialReceiver::writeSerial(QString comPort, QByteArray payloads)
 {
     qDebug().noquote() <<"writeSerial: "<<comPort <<"payloads : "<<payloads;
     serialport->write(payloads, payloads.length());
+    if(serialport->flush()){
+        qDebug()<< "success write serial";
+    }else{
+        qDebug()<< "failed write serial";
+    }
 }
