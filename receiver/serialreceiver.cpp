@@ -37,6 +37,8 @@ void SerialReceiver::readSerial()
     buff.append(serialport->readAll());
 
     qDebug() << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss:zzz")<<" Receiving from: "<<serialport->portName()<<" buff: "<<buff;
+    // send data to central process
+    emit sendFromSerial(serialport->portName(), buff);
     buff.clear();
 }
 

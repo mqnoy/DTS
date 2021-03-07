@@ -12,7 +12,10 @@ class SerialReceiver : public QThread
     Q_OBJECT
 public:
     explicit SerialReceiver(QObject *parent = nullptr);
+
 signals:
+    // send data to centralprocess
+    void sendFromSerial(QString, QByteArray);
 
 public slots:
     // init
