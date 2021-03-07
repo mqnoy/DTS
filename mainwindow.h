@@ -4,8 +4,10 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QThread>
+#include <QSettings>
 #include "dialogabout.h"
 #include "receiver/serialreceiver.h"
+#include "constant.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -26,6 +28,9 @@ signals:
 public slots:
     void setLcdNumberValues();
 
+    // function fullscreen mode
+    void setFullScreenMode();
+
 
 private slots:
     void on_actionAbout_triggered();
@@ -44,7 +49,8 @@ private:
     QThread *thSerial;
 
     //
-    QString com_port;
+    QString com_port= "";
+    qint32 com_speed = 0;
 
     //
 };
