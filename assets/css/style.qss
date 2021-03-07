@@ -7,3 +7,22 @@ QFrame#groupBoxA
 {
     background: transparent;
 }
+
+QLabel#label_ft
+{
+color: rgb(255, 255, 255);
+}
+
+QLabel#label_et
+{
+}
+
+QLabel#label_rt
+{
+}
+
+QLabel#label_spd
+{
+}
+
+
