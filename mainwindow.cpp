@@ -136,12 +136,18 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QByteArray payloads = QString("abort dts A").toUtf8();
+    QByteArray payloads = QString("{\"kind\":\"%1\",\"command\":\"%2\"}")
+            .arg("A")
+            .arg("abort")
+            .toUtf8();
     emit serialCentralProc->writeSerialFromCs(com_port, payloads);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    QByteArray payloads = QString("abort dts B").toUtf8();
+    QByteArray payloads = QString("{\"kind\":\"%1\",\"command\":\"%2\"}")
+            .arg("B")
+            .arg("abort")
+            .toUtf8();
     emit serialCentralProc->writeSerialFromCs(com_port, payloads);
 }
