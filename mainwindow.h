@@ -5,6 +5,7 @@
 #include <QTimer>
 #include <QThread>
 #include <QSettings>
+#include <QJsonObject>
 #include "dialogabout.h"
 #include "receiver/serialreceiver.h"
 #include "receiver/serialcentralprocess.h"
@@ -42,6 +43,20 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void on_rd_delay_tree500_clicked();
+
+    void on_rd_delay_tree400_clicked();
+
+    void on_radioButton_clicked();
+
+    void on_radioButton_3_clicked();
+
+    void on_radioButton_2_clicked();
+
+    void on_rb_full_tree_clicked();
+
+    void on_rb_pro_tree_clicked();
+
 private:
     Ui::MainWindow *ui;
 
@@ -57,5 +72,6 @@ private:
     qint32 com_speed = 0;
 
     //
+    QJsonObject tempPayloads;
 };
 #endif // MAINWINDOW_H

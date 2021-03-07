@@ -44,6 +44,6 @@ void SerialReceiver::readSerial()
 
 void SerialReceiver::writeSerial(QString comPort, QByteArray payloads)
 {
-    qDebug() <<"writeSerial: "<<comPort <<"payloads : "<<payloads;
+    qDebug().noquote() <<"writeSerial: "<<comPort <<"payloads : "<<payloads;
     serialport->write(payloads, payloads.length());
 }

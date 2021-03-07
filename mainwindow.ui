@@ -677,14 +677,14 @@ background-color: rgb(255, 255, 127);</string>
                         </property>
                         <layout class="QVBoxLayout" name="verticalLayout_4">
                          <item>
-                          <widget class="QRadioButton" name="radioButton_6">
+                          <widget class="QRadioButton" name="rb_full_tree">
                            <property name="text">
                             <string>FULL TREE</string>
                            </property>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QRadioButton" name="radioButton_7">
+                          <widget class="QRadioButton" name="rb_pro_tree">
                            <property name="text">
                             <string>PRO TREE</string>
                            </property>
@@ -720,18 +720,18 @@ background-color: rgb(255, 255, 127);</string>
                       <item row="0" column="0">
                        <widget class="QGroupBox" name="groupBox_4">
                         <property name="title">
-                         <string>Delay Tree</string>
+                         <string>Delay Tree(ms)</string>
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_12">
                          <item>
-                          <widget class="QRadioButton" name="radioButton_4">
+                          <widget class="QRadioButton" name="rd_delay_tree500">
                            <property name="text">
                             <string>500</string>
                            </property>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QRadioButton" name="radioButton_5">
+                          <widget class="QRadioButton" name="rd_delay_tree400">
                            <property name="text">
                             <string>400</string>
                            </property>
@@ -991,7 +991,7 @@ background-color: rgb(255, 255, 127);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_10">
+                  <widget class="QLCDNumber" name="lcdNumber_ft2">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
@@ -1020,7 +1020,7 @@ background-color: rgb(255, 255, 127);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_9">
+                  <widget class="QLCDNumber" name="lcdNumber_et2">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
@@ -1049,7 +1049,7 @@ background-color: rgb(255, 255, 127);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_8">
+                  <widget class="QLCDNumber" name="lcdNumber_rt2">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
@@ -1078,7 +1078,7 @@ background-color: rgb(255, 255, 127);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_7">
+                  <widget class="QLCDNumber" name="lcdNumber_spd2">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
