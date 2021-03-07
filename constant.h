@@ -4,6 +4,15 @@
 #include <QObject>
 #include <QStandardPaths>
 
+
+enum SERIAL_DEFINITION{
+    RECEIVE_FT = 100,
+    RECEIVE_ET = 101,
+    RECEIVE_RT = 102,
+    RECEIVE_SPD = 103
+};
+
+
 class Constant : public QObject
 {
     Q_OBJECT
