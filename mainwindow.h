@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
 #include "dialogabout.h"
 
 QT_BEGIN_NAMESPACE
@@ -18,6 +19,8 @@ public:
 
 private slots:
     void on_actionAbout_triggered();
+
+    void on_pushButton_7_clicked();
 
 private:
     Ui::MainWindow *ui;

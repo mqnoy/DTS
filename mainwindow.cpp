@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QTimer::singleShot(0, this, SLOT(showFullScreen()));
 }
 
 MainWindow::~MainWindow()
@@ -18,4 +19,9 @@ void MainWindow::on_actionAbout_triggered()
 {
     DialogAbout *dialog_about = new DialogAbout();
     dialog_about->setVisible(true);
+}
+
+void MainWindow::on_pushButton_7_clicked()
+{
+    close();
 }
