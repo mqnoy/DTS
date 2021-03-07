@@ -3,7 +3,10 @@
 
 #include <QMainWindow>
 #include <QTimer>
+#include <QThread>
 #include "dialogabout.h"
+#include "receiver/serialreceiver.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,12 +20,32 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+signals:
+    void writeSerial(QString comPort, QByteArray payloads);
+
+public slots:
+    void setLcdNumberValues();
+
+
 private slots:
     void on_actionAbout_triggered();
 
     void on_pushButton_7_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_6_clicked();
+
 private:
     Ui::MainWindow *ui;
+    SerialReceiver *serialReceiver;
+
+    // thread
+    QThread *thSerial;
+
+    //
+    QString com_port;
+
+    //
 };
 #endif // MAINWINDOW_H
