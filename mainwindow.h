@@ -7,6 +7,7 @@
 #include <QSettings>
 #include <QJsonObject>
 #include "dialogabout.h"
+#include "dialogstats.h"
 #include "receiver/serialreceiver.h"
 #include "receiver/serialcentralprocess.h"
 #include "constant.h"
@@ -57,6 +58,12 @@ private slots:
 
     void on_rb_pro_tree_clicked();
 
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
 
@@ -73,5 +80,9 @@ private:
 
     //
     QJsonObject tempPayloads;
+
+
+    // dialog
+    DialogStats *dialog_stats;
 };
 #endif // MAINWINDOW_H

@@ -127,3 +127,21 @@ void MainWindow::on_rb_pro_tree_clicked()
 {
     tempPayloads.insert("tree_type", "PRO");
 }
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    dialog_stats = new DialogStats;
+    dialog_stats->setVisible(true);
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QByteArray payloads = QString("abort dts A").toUtf8();
+    emit serialCentralProc->writeSerialFromCs(com_port, payloads);
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    QByteArray payloads = QString("abort dts B").toUtf8();
+    emit serialCentralProc->writeSerialFromCs(com_port, payloads);
+}
