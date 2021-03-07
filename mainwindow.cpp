@@ -56,6 +56,9 @@ void MainWindow::on_pushButton_clicked()
     if(!tempPayloads.contains("kind")){
         qDebug()<<"payload not contains kind";
     }else{
+        // add timestamp
+        tempPayloads.insert("timestamp", QDateTime::currentSecsSinceEpoch());
+
         QJsonDocument doc(tempPayloads);
         QByteArray payloads = doc.toJson(QJsonDocument::Compact);
         emit serialCentralProc->writeSerialFromCs(com_port, payloads);
@@ -136,18 +139,20 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QByteArray payloads = QString("{\"kind\":\"%1\",\"command\":\"%2\"}")
+    QByteArray payloads = QString("{\"kind\":\"%1\",\"command\":\"%2\",\"timestamp\":%3}")
             .arg("A")
             .arg("abort")
+            .arg(QDateTime::currentSecsSinceEpoch())
             .toUtf8();
     emit serialCentralProc->writeSerialFromCs(com_port, payloads);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    QByteArray payloads = QString("{\"kind\":\"%1\",\"command\":\"%2\"}")
+    QByteArray payloads = QString("{\"kind\":\"%1\",\"command\":\"%2\",\"timestamp\":%3}")
             .arg("B")
             .arg("abort")
+            .arg(QDateTime::currentSecsSinceEpoch())
             .toUtf8();
     emit serialCentralProc->writeSerialFromCs(com_port, payloads);
 }
