@@ -1,5 +1,9 @@
 # DTS
 
+### Usage
+[TODO]
+
+
 ### dot init configuration
 
 crete or copy file `application.ini` to  `C:/Users/yourusername/.dts/`
@@ -12,7 +16,7 @@ SERIAL_SPEED=115200
 ```
 
 
-### example making data serial
+### example receive data from serial
 
 kind : for distinguish where the data came from
 
@@ -32,4 +36,19 @@ kind : for distinguish where the data came from
 {"kind":"B","spd":100,"timestamp":123123}
 {"kind":"B","status":"open","timestamp":123123}
 {"kind":"B","status":"close","timestamp":123123}
+```
+
+### example send to serial
+
+abort command 
+```
+{"kind":"A","command":"abort"}
+{"kind":"B","command":"abort"}
+```
+
+setup command
+```
+{"delay_tree":500,"kind":"A","tree_type":"FULL"}
+{"delay_tree":500,"kind":"B","tree_type":"FULL"}
+{"delay_tree":500,"kind":"AB","tree_type":"FULL"}
 ```
