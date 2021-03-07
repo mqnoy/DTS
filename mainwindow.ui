@@ -637,6 +637,9 @@ background-color: rgb(255, 255, 127);</string>
               </item>
               <item row="2" column="0">
                <widget class="QGroupBox" name="groupBox_3">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
                 <property name="title">
                  <string>Control box</string>
                 </property>
@@ -806,6 +809,9 @@ background-color: rgb(255, 255, 127);</string>
                   <layout class="QGridLayout" name="gridLayout_4">
                    <item row="0" column="0">
                     <widget class="QPushButton" name="pushButton">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>START</string>
                      </property>
@@ -813,6 +819,9 @@ background-color: rgb(255, 255, 127);</string>
                    </item>
                    <item row="0" column="1">
                     <widget class="QPushButton" name="pushButton_4">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>STATS</string>
                      </property>
@@ -820,6 +829,9 @@ background-color: rgb(255, 255, 127);</string>
                    </item>
                    <item row="1" column="1">
                     <widget class="QPushButton" name="pushButton_5">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>PRINT</string>
                      </property>
@@ -827,6 +839,9 @@ background-color: rgb(255, 255, 127);</string>
                    </item>
                    <item row="2" column="0">
                     <widget class="QPushButton" name="pushButton_3">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>ABORT B</string>
                      </property>
@@ -834,6 +849,9 @@ background-color: rgb(255, 255, 127);</string>
                    </item>
                    <item row="1" column="0">
                     <widget class="QPushButton" name="pushButton_2">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>ABORT A</string>
                      </property>
@@ -841,6 +859,9 @@ background-color: rgb(255, 255, 127);</string>
                    </item>
                    <item row="2" column="1">
                     <widget class="QPushButton" name="pushButton_6">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>CONNECT</string>
                      </property>
@@ -848,6 +869,9 @@ background-color: rgb(255, 255, 127);</string>
                    </item>
                    <item row="3" column="1">
                     <widget class="QPushButton" name="pushButton_7">
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(0, 0, 0);</string>
+                     </property>
                      <property name="text">
                       <string>EXIT</string>
                      </property>
