@@ -7,6 +7,7 @@
 #include <QSettings>
 #include "dialogabout.h"
 #include "receiver/serialreceiver.h"
+#include "receiver/serialcentralprocess.h"
 #include "constant.h"
 
 
@@ -43,7 +44,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    //
     SerialReceiver *serialReceiver;
+    SerialCentralProcess *serialCentralProc;
 
     // thread
     QThread *thSerial;

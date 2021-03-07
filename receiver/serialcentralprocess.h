@@ -2,6 +2,8 @@
 #define SERIALCENTRALPROCESS_H
 
 #include <QObject>
+#include <QThread>
+#include <QDebug>
 
 class SerialCentralProcess : public QObject
 {
@@ -10,6 +12,13 @@ public:
     explicit SerialCentralProcess(QObject *parent = nullptr);
 
 signals:
+    // write payload
+    void writeSerialFromCs(QString comPort, QByteArray payloads);
+
+
+public slots:
+    // receiving data from serial receiver class
+    void receiveFromSerial(QString portName, QByteArray buff);
 
 };
 

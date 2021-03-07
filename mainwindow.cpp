@@ -46,7 +46,7 @@ void MainWindow::on_pushButton_clicked()
 {
     // start button
     QByteArray payloads = QString("start command").toUtf8();
-    emit writeSerial(com_port, payloads);
+    emit serialCentralProc->writeSerialFromCs(com_port, payloads);
 }
 
 void MainWindow::on_pushButton_6_clicked()
@@ -59,12 +59,25 @@ void MainWindow::on_pushButton_6_clicked()
         qDebug()<<"Please fill value SERIAL_PORT and SERIAL_SPEED..";
     }else{
         serialReceiver = new SerialReceiver;
-        serialReceiver->init(com_port, 115200);
+        serialReceiver->init(com_port, com_speed);
         connect(this, &MainWindow::writeSerial,
                 serialReceiver, &SerialReceiver::writeSerial);
-
-        //thSerial = new QThread(this);
-        //serialReceiver->moveToThread(thSerial);
         serialReceiver->start();
+
+        // serial central process
+        serialCentralProc = new SerialCentralProcess;
+
+        // connect for sending n receiving data
+        connect(serialReceiver, &SerialReceiver::sendFromSerial,
+                serialCentralProc, &SerialCentralProcess::receiveFromSerial);
+
+        // connect for sending payloads to serial receiver class
+        connect(serialCentralProc, &SerialCentralProcess::writeSerialFromCs,
+                serialReceiver, &SerialReceiver::writeSerial);
+
+
+        thSerial = new QThread;
+        serialCentralProc->moveToThread(thSerial);
+        thSerial->start();
     }
 }
