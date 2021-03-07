@@ -178,7 +178,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber">
+                  <widget class="QLCDNumber" name="lcdNumber_ft">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
@@ -207,7 +207,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_4">
+                  <widget class="QLCDNumber" name="lcdNumber_et">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
@@ -236,7 +236,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_5">
+                  <widget class="QLCDNumber" name="lcdNumber_rt">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
@@ -265,7 +265,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLCDNumber" name="lcdNumber_6">
+                  <widget class="QLCDNumber" name="lcdNumber_spd">
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
                    </property>
