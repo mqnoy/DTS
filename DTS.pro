@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     constant.cpp \
     dialogabout.cpp \
+    dialogstats.cpp \
     main.cpp \
     mainwindow.cpp \
     receiver/serialcentralprocess.cpp \
@@ -26,12 +27,14 @@ SOURCES += \
 HEADERS += \
     constant.h \
     dialogabout.h \
+    dialogstats.h \
     mainwindow.h \
     receiver/serialcentralprocess.h \
     receiver/serialreceiver.h
 
 FORMS += \
     dialogabout.ui \
+    dialogstats.ui \
     mainwindow.ui
 
 # Default rules for deployment.
