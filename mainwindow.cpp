@@ -13,3 +13,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_actionAbout_triggered()
+{
+    DialogAbout *dialog_about = new DialogAbout();
+    dialog_about->setVisible(true);
+}

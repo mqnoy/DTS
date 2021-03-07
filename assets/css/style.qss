@@ -1,0 +1,9 @@
+QWidget#centralwidget
+{
+    background-image: url(:/img/assets/img/background.jpg);
+}
+
+QFrame#groupBoxA
+{
+    background: transparent;
+}
