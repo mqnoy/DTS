@@ -31,5 +31,5 @@ kind : for distinguish where the data came from
 {"kind":"B","rt":100,"timestamp":123123}
 {"kind":"B","spd":100,"timestamp":123123}
 {"kind":"B","status":"open","timestamp":123123}
-{"kind":"A","status":"close","timestamp":123123}
+{"kind":"B","status":"close","timestamp":123123}
 ```
