@@ -8,6 +8,11 @@
 #include <QJsonObject>
 #include <QLCDNumber>
 #include <QLabel>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlRecord>
+#include <QSqlError>
+#include "constant.h"
 
 class SerialCentralProcess : public QObject
 {
@@ -46,6 +51,15 @@ private:
     // ptr qlabel
     QLabel* _label_status_a;
     QLabel* _label_status_b;
+
+    // database
+    QSqlDatabase m_database;
+
+    // open database
+    void openDBSQLite();
+
+    // execute sqlite
+    void executeSQLite(const QString &queryId, const QString &sql, QList<QSqlRecord> &recs, int &last_insert_id, bool &returnUD);
 
 };
 
