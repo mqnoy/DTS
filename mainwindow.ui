@@ -392,7 +392,7 @@
                     </size>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">background-color: rgb(85, 170, 255);</string>
+                    <string notr="true">background-color: rgba(26, 26, 26, 130);</string>
                    </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -409,10 +409,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #FF2D00;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>0</string>
                       </property>
                      </widget>
                     </item>
@@ -424,10 +424,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #FFAE29;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>1</string>
                       </property>
                      </widget>
                     </item>
@@ -439,10 +439,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #E4FF00;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>3</string>
                       </property>
                      </widget>
                     </item>
@@ -454,10 +454,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #FFF700;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>2</string>
                       </property>
                      </widget>
                     </item>
@@ -481,10 +481,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #5DFF00;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>4</string>
                       </property>
                      </widget>
                     </item>
@@ -500,7 +500,7 @@ background-color: rgb(255, 255, 127);</string>
                     </size>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">background-color: rgb(85, 170, 255);</string>
+                    <string notr="true">background-color: rgba(26, 26, 26, 130);</string>
                    </property>
                    <property name="frameShape">
                     <enum>QFrame::StyledPanel</enum>
@@ -517,10 +517,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #5DFF00;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>4</string>
                       </property>
                      </widget>
                     </item>
@@ -532,10 +532,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #E4FF00;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>3</string>
                       </property>
                      </widget>
                     </item>
@@ -547,10 +547,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #FF2D00;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>0</string>
                       </property>
                      </widget>
                     </item>
@@ -562,10 +562,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #FFF700;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>2</string>
                       </property>
                      </widget>
                     </item>
@@ -577,10 +577,10 @@ min-height: 55px;
 min-width: 55px;
 max-height: 55px;
 max-width: 55px;
-background-color: rgb(255, 255, 127);</string>
+background-color: #FFAE29;</string>
                       </property>
                       <property name="text">
-                       <string>TextLabel</string>
+                       <string>1</string>
                       </property>
                      </widget>
                     </item>
@@ -596,7 +596,7 @@ background-color: rgb(255, 255, 127);</string>
                     </size>
                    </property>
                    <property name="styleSheet">
-                    <string notr="true">background-color: rgb(85, 170, 255);</string>
+                    <string notr="true">background-color: rgba(26, 26, 26, 130);</string>
                    </property>
                    <property name="frameShape">
                     <enum>QFrame::NoFrame</enum>
@@ -901,7 +901,7 @@ background-color: rgb(255, 255, 127);</string>
            <item>
             <widget class="QGroupBox" name="groupBox_2">
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);</string>
+              <string notr="true"/>
              </property>
              <property name="title">
               <string>Lane B</string>
