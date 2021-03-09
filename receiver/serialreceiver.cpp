@@ -27,19 +27,23 @@ void SerialReceiver::init(QString comPort, qint32 boudRate)
         qDebug() << "Success opening serial port: " << serialport->errorString();
         connect(serialport, &QSerialPort::readyRead,
                 this, &SerialReceiver::readSerial);
-        serialport->write("Halo from me another side..\n");
+        //serialport->write("Halo from me another side..\n");
     }
 }
 
 void SerialReceiver::readSerial()
 {
     QByteArray buff;
-    buff.append(serialport->readAll());
+    if(serialport->waitForReadyRead()){
+        if (serialport->bytesAvailable() > 0 ){
+            buff = serialport->readLine();
+            qDebug().noquote() << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss:zzz")<<" Receiving from: "<<serialport->portName()<<" buff: "<<buff;
+            // send data to central process
+            emit sendFromSerial(serialport->portName(), buff);
+            buff.clear();
+        }
+    }
 
-    qDebug() << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss:zzz")<<" Receiving from: "<<serialport->portName()<<" buff: "<<buff;
-    // send data to central process
-    emit sendFromSerial(serialport->portName(), buff);
-    buff.clear();
 }
 
 void SerialReceiver::writeSerial(QString comPort, QByteArray payloads)
