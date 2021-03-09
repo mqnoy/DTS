@@ -61,7 +61,8 @@
            <item>
             <widget class="QGroupBox" name="groupBoxA">
              <property name="styleSheet">
-              <string notr="true">color: rgb(255, 255, 255);</string>
+              <string notr="true">background-color: rgba(26, 26, 26, 130);
+color: rgb(255, 255, 255);</string>
              </property>
              <property name="title">
               <string>Lane A</string>
@@ -329,10 +330,10 @@
                  </size>
                 </property>
                 <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
+                 <enum>QFrame::NoFrame</enum>
                 </property>
                 <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
+                 <enum>QFrame::Plain</enum>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_10">
                  <property name="topMargin">
@@ -638,7 +639,8 @@ background-color: #FFAE29;</string>
               <item row="2" column="0">
                <widget class="QGroupBox" name="groupBox_3">
                 <property name="styleSheet">
-                 <string notr="true">color: rgb(255, 255, 255);</string>
+                 <string notr="true">background-color: rgba(26, 26, 26, 130);
+color: rgb(255, 255, 255);</string>
                 </property>
                 <property name="title">
                  <string>Control box</string>
@@ -809,8 +811,15 @@ background-color: #FFAE29;</string>
                   <layout class="QGridLayout" name="gridLayout_4">
                    <item row="0" column="0">
                     <widget class="QPushButton" name="pushButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>START</string>
@@ -819,8 +828,15 @@ background-color: #FFAE29;</string>
                    </item>
                    <item row="0" column="1">
                     <widget class="QPushButton" name="pushButton_4">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>STATS</string>
@@ -829,8 +845,15 @@ background-color: #FFAE29;</string>
                    </item>
                    <item row="1" column="1">
                     <widget class="QPushButton" name="pushButton_5">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>PRINT</string>
@@ -839,8 +862,15 @@ background-color: #FFAE29;</string>
                    </item>
                    <item row="2" column="0">
                     <widget class="QPushButton" name="pushButton_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>ABORT B</string>
@@ -849,8 +879,15 @@ background-color: #FFAE29;</string>
                    </item>
                    <item row="1" column="0">
                     <widget class="QPushButton" name="pushButton_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>ABORT A</string>
@@ -859,8 +896,15 @@ background-color: #FFAE29;</string>
                    </item>
                    <item row="2" column="1">
                     <widget class="QPushButton" name="pushButton_6">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>CONNECT</string>
@@ -869,8 +913,15 @@ background-color: #FFAE29;</string>
                    </item>
                    <item row="3" column="1">
                     <widget class="QPushButton" name="pushButton_7">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>65</height>
+                      </size>
+                     </property>
                      <property name="styleSheet">
-                      <string notr="true">color: rgb(0, 0, 0);</string>
+                      <string notr="true">color: rgb(252, 255, 255);
+background-color: rgb(104, 105, 105);</string>
                      </property>
                      <property name="text">
                       <string>EXIT</string>
@@ -901,7 +952,8 @@ background-color: #FFAE29;</string>
            <item>
             <widget class="QGroupBox" name="groupBox_2">
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">background-color: rgba(26, 26, 26, 130);
+color: rgb(255, 255, 255);</string>
              </property>
              <property name="title">
               <string>Lane B</string>
