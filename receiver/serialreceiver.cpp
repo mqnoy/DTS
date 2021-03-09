@@ -4,11 +4,7 @@ SerialReceiver::SerialReceiver(QObject *parent) : QThread(parent)
 {}
 
 void SerialReceiver::run()
-{
-    while(1){
-        //emit readSerial();
-    }
-}
+{}
 
 void SerialReceiver::init(QString comPort, qint32 boudRate)
 {
