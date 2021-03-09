@@ -137,7 +137,7 @@
                    </property>
                    <layout class="QGridLayout" name="gridLayout_6">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_2">
+                     <widget class="QLabel" name="label_status_a">
                       <property name="layoutDirection">
                        <enum>Qt::LeftToRight</enum>
                       </property>
@@ -948,7 +948,7 @@ background-color: rgb(255, 255, 127);</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_9">
                     <item row="0" column="0">
-                     <widget class="QLabel" name="label_12">
+                     <widget class="QLabel" name="label_status_b">
                       <property name="layoutDirection">
                        <enum>Qt::LeftToRight</enum>
                       </property>

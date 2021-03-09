@@ -17,12 +17,18 @@ void SerialCentralProcess::receiveFromSerial(QString portName, QByteArray buff)
         _rt_a->display(object.value("rt").toInt());
         _spd_a->display(object.value("spd").toInt());
 
+        // set status
+        _label_status_a->setText(object.value("status").toString());
+
     }else if(object.value("kind").toString() == "B"){
         // lane B
         _ft_b->display(object.value("ft").toInt());
         _et_b->display(object.value("et").toInt());
         _rt_b->display(object.value("rt").toInt());
         _spd_b->display(object.value("spd").toInt());
+
+        // set status
+        _label_status_b->setText(object.value("status").toString());
 
     }
     //qDebug()<<"receiveFromSerial, receive from: "<<portName<<" : "<<buff;
@@ -40,4 +46,10 @@ void SerialCentralProcess::recInitPtrLCD(QLCDNumber* ft_a, QLCDNumber* et_a, QLC
     _et_b = et_b;
     _rt_b = rt_b;
     _spd_b = spd_b;
+}
+
+void SerialCentralProcess::recInitPtrLabel(QLabel* label_status_a, QLabel* label_status_b)
+{
+    _label_status_a = label_status_a;
+    _label_status_b = label_status_b;
 }

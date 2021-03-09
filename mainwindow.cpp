@@ -15,6 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
     // init ptr LCD
     serialCentralProc->recInitPtrLCD(ui->lcdNumber_ft, ui->lcdNumber_et, ui->lcdNumber_rt, ui->lcdNumber_spd,
                                      ui->lcdNumber_ft2, ui->lcdNumber_et2, ui->lcdNumber_rt2, ui->lcdNumber_spd2);
+    // init ptr label
+    serialCentralProc->recInitPtrLabel(ui->label_status_a, ui->label_status_b);
+
 
 
     // set fullscreen mode

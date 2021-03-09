@@ -7,6 +7,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QLCDNumber>
+#include <QLabel>
 
 class SerialCentralProcess : public QObject
 {
@@ -17,6 +18,9 @@ public:
     // init ptr lcd
     void recInitPtrLCD(QLCDNumber* ft_a, QLCDNumber* et_a, QLCDNumber* rt_a, QLCDNumber* spd_a,
                        QLCDNumber* ft_b, QLCDNumber* et_b, QLCDNumber* rt_b, QLCDNumber* spd_b);
+
+    // init ptr qlabel
+    void recInitPtrLabel(QLabel* label_status_a, QLabel* label_status_b);
 
 signals:
     // write payload
@@ -38,6 +42,10 @@ private:
     QLCDNumber* _et_b;
     QLCDNumber* _rt_b;
     QLCDNumber* _spd_b;
+
+    // ptr qlabel
+    QLabel* _label_status_a;
+    QLabel* _label_status_b;
 
 };
 
