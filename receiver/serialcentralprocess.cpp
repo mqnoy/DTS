@@ -25,7 +25,7 @@ void SerialCentralProcess::receiveFromSerial(QString portName, QByteArray buff)
         _spd_b->display(object.value("spd").toInt());
 
     }
-    qDebug()<<"receiveFromSerial, receive from: "<<portName<<" : "<<buff;
+    //qDebug()<<"receiveFromSerial, receive from: "<<portName<<" : "<<buff;
 }
 
 void SerialCentralProcess::recInitPtrLCD(QLCDNumber* ft_a, QLCDNumber* et_a, QLCDNumber* rt_a, QLCDNumber* spd_a,
