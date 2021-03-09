@@ -21,34 +21,28 @@ SERIAL_SPEED=115200
 kind : for distinguish where the data came from
 
 ```
-{"kind":"A","ft":100,"timestamp":1615131559}
-{"kind":"A","et":100,"timestamp":1615131559}
-{"kind":"A","rt":100,"timestamp":1615131559}
-{"kind":"A","spd":100,"timestamp":1615131559}
-{"kind":"A","status":"open","timestamp":1615131559}
-{"kind":"A","status":"close","timestamp":1615131559}
+{"kind":"A","ft":17,"et":54,"rt":24,"spd":29}
+{"kind":"A","status":"open"}
+{"kind":"A","status":"close"}
 ```
 
 ```
-{"kind":"B","ft":100,"timestamp":1615131559}
-{"kind":"B","et":100,"timestamp":1615131559}
-{"kind":"B","rt":100,"timestamp":1615131559}
-{"kind":"B","spd":100,"timestamp":1615131559}
-{"kind":"B","status":"open","timestamp":1615131559}
-{"kind":"B","status":"close","timestamp":1615131559}
+{"kind":"B","ft":54,"et":65,"rt":14,"spd":1}
+{"kind":"B","status":"open"}
+{"kind":"B","status":"close"}
 ```
 
 ### example send to serial
 
 abort command 
 ```
-{"kind":"A","command":"abort","timestamp":1615131559}
-{"kind":"B","command":"abort","timestamp":1615131559}
+{"kind":"A","command":"abort"}
+{"kind":"B","command":"abort"}
 ```
 
 setup command
 ```
-{"delay_tree":500,"kind":"A","timestamp":1615131559,"tree_type":"FULL"}
-{"delay_tree":500,"kind":"B","timestamp":1615131559,"tree_type":"FULL"}
-{"delay_tree":500,"kind":"AB","timestamp":1615131559,"tree_type":"FULL"}
+{"command":"setup","delay_tree":500,"kind":"A","tree_type":"FULL"}
+{"command":"setup","delay_tree":500,"kind":"B","tree_type":"FULL"}
+{"command":"setup","delay_tree":500,"kind":"AB","tree_type":"FULL"}
 ```
