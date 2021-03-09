@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>996</width>
-    <height>642</height>
+    <height>746</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -599,10 +599,10 @@ background-color: rgb(255, 255, 127);</string>
                     <string notr="true">background-color: rgb(85, 170, 255);</string>
                    </property>
                    <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                    <enum>QFrame::NoFrame</enum>
                    </property>
                    <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                    <enum>QFrame::Plain</enum>
                    </property>
                   </widget>
                  </item>
